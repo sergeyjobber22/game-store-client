@@ -1,0 +1,15 @@
+.wrapper{
+    @apply flex gap-5 h-16 mb-10
+}
+
+.links{
+    @apply gap-12 flex items-center
+}
+
+.icons{
+    @apply flex flex-1 w-full h-full justify-end items-center
+}
+
+.cart *{
+    color: aquamarine;
+}
