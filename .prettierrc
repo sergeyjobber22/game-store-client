@@ -2,10 +2,16 @@
   "singleQuote": false,
   "semi": false,
   "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^./",
+    "^../",
     "^@hooks",
     "^@layout",
     "^@ui",
-    "<THIRD_PARTY_MODULES>"
+    "^@icons",
+    "^@screens",
+    "^@providers",
+    "module.scss$"
   ],
   "importOrderSeparation": true
 }

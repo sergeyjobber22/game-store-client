@@ -1,6 +1,9 @@
 import style from "./Header.module.scss"
+import Bookmark from "assets/icons/bookmark.svg"
+import Cart from "assets/icons/cart.svg"
+import avatar from "assets/icons/man.png"
+import Image from "next/image"
 import Link from "next/link"
-import Cart from 'assets/icons/cart.svg'
 
 export const Header = () => {
   return (
@@ -9,7 +12,7 @@ export const Header = () => {
         <Link href={"/"}>
           <a>Home</a>
         </Link>
-        <Link href={"/"}> 
+        <Link href={"/"}>
           <a>Streams</a>
         </Link>
         <Link href={"/"}>
@@ -20,7 +23,11 @@ export const Header = () => {
         </Link>
       </div>
       <div className={style.icons}>
-        <Cart/>
+        <Cart className={style.cart} />
+        <Bookmark className={style.cart} />
+        <div>
+          <Image width={75} height={75} src={avatar} />
+        </div>
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
-import style from "./layout.module.scss"
 import { PropsWithChildren } from "react"
+
+import style from "./bgLayer.module.scss"
 
 export const Layout = ({ children }: PropsWithChildren) => {
   return (
