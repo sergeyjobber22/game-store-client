@@ -1,0 +1,20 @@
+.game{
+  @apply p-4 bg-transparent rounded-lg;
+  &__mediaWrapper{
+    @apply rounded-xl;
+    overflow: hidden;
+    font-size: 0px;
+  }
+  &__title{
+    @apply font-bold text-2xl;
+  }
+  &__platform{
+    @apply text-gray font-semibold;
+  }
+  &__footer{
+    @apply flex gap-2 items-center;
+  }
+  &__price{
+    @apply font-bold text-gold text-2xl;
+  }
+}
