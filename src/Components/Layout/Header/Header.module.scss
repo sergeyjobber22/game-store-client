@@ -1,5 +1,5 @@
 .wrapper{
-    @apply flex gap-5 pt-5;
+    @apply flex gap-5 pt-5 text-gray pb-7   ;
 }
 
 .links{
@@ -10,7 +10,21 @@
     @apply flex flex-1 w-full h-full justify-end items-center gap-12
 }
 
-.cart{
+.link{
+    &:hover{
+        transition: 1s;
+        color: #e58d27
+    }
+}
+
+.icon{
     @apply w-9;
-    fill: #fff;
+    stroke: #909090;
+    fill:  #909090;
+    &:hover{
+        transition: 1s;
+        cursor: pointer;
+        stroke: #e58d27;
+        fill:  #e58d27;
+    }
 }

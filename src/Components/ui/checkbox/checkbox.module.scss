@@ -1,3 +1,20 @@
 .input{
+    position: absolute;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    &:checked + .checkbox{
+        background-position: center;
+        background-size: contain;
+        background-image: url(../../../assets/icons/checkbox.svg)
+    }
+}
+
+.checkbox{
+    @apply bg-transparent rounded-sm;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
     margin-right: 10px;
+    overflow: hidden;
 }

@@ -12,6 +12,7 @@ export const Checkbox = ({text,className}:TProps) => {
     <div className={cn(style.wrapper,className)}>
       <label>
         <input className={style.input} type={"checkbox"} />
+        <span className={style.checkbox}></span>
         {text}
       </label>
     </div>

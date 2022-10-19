@@ -10,21 +10,21 @@ export const Header = () => {
     <div className={style.wrapper}>
       <div className={style.links}>
         <Link href={"/"}>
-          <a>Home</a>
+          <a className={style.link}>Home</a>
         </Link>
         <Link href={"/"}>
-          <a>Streams</a>
+          <a className={style.link}>Streams</a>
         </Link>
         <Link href={"/"}>
-          <a>Game store</a>
+          <a className={style.link}>Game store</a>
         </Link>
         <Link href={"/"}>
-          <a>News</a>
+          <a className={style.link}>News</a>
         </Link>
       </div>
       <div className={style.icons}>
-        <Cart className={style.cart} />
-        <Bookmark className={style.cart} />
+        <Cart className={style.icon} />
+        <Bookmark className={style.icon} />
         <div>
           <Image width={75} height={75} src={avatar} />
         </div>
