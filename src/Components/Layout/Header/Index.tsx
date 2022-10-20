@@ -1,14 +1,18 @@
-import style from "./Header.module.scss"
 import Bookmark from "assets/icons/bookmark.svg"
 import Cart from "assets/icons/cart.svg"
 import avatar from "assets/icons/man.png"
 import Image from "next/image"
 import Link from "next/link"
 
+import style from "./Header.module.scss"
+
 export const Header = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.links}>
+        <div className={style.burger}>
+          <span></span>
+        </div>
         <Link href={"/"}>
           <a className={style.link}>Home</a>
         </Link>
@@ -26,7 +30,9 @@ export const Header = () => {
         <Cart className={style.icon} />
         <Bookmark className={style.icon} />
         <div>
-          <Image width={75} height={75} src={avatar} />
+          <div className={style.avatar}>
+            <Image src={avatar} />
+          </div>
         </div>
       </div>
     </div>

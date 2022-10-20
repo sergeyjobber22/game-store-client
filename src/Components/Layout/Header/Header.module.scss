@@ -1,5 +1,5 @@
 .wrapper{
-    @apply flex gap-5 pt-5 text-gray pb-7   ;
+    @apply flex gap-5 pt-5 text-gray lg:pb-7 pb-3 ;
 }
 
 .links{
@@ -26,5 +26,30 @@
         cursor: pointer;
         stroke: #e58d27;
         fill:  #e58d27;
+    }
+}
+
+.avatar{
+    @apply w-16 h-16 lg:w-24 lg:h-24 ;
+}
+
+.burger{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span{
+        &::before,&::after{
+            content: "";
+            width: 30px;
+            background-color: #909090;
+            height: 2px;
+            border-radius: 10px;    
+        }
+        width: 30px;
+        background-color: #909090;
+        height: 2px;
+        border-radius: 10px;
     }
 }

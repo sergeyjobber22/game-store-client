@@ -13,6 +13,11 @@ module.exports = {
       "transparent-dark":"rgba(0,0,0,0.5)",
       white:"#fff", 
       gray: "	#909090",
+    },
+    extend:{
+      screens:{
+        "md":"840px"
+      }
     }
   },
   plugins: [],

@@ -2,3 +2,8 @@
     @apply w-1/4 bg-transparent text-gray p-3 rounded-xl;
     min-width:250px;
 }
+.visible{
+    @media (max-width:840px){
+        display: none;
+    }
+}

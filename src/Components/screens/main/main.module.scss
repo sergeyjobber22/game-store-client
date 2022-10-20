@@ -1,9 +1,8 @@
 .content{
-    @apply flex gap-14
+    @apply flex gap-14 items-start
 }
 .games{
-    @apply pt-10;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    @apply pt-5 lg:pt-10 grid gap-5;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
 }

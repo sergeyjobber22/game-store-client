@@ -1,0 +1,14 @@
+.layout{
+    @apply bg-brown min-h-screen w-screen box-border;
+    >div{
+        @apply bg-transparent-dark lg:px-10 px-4;
+    }
+}
+
+.content{
+    @apply box-border text-white h-full w-full;
+}
+
+.body{
+    @apply flex items-start gap-5 lg:gap-10;
+}

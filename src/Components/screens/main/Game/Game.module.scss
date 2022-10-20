@@ -1,9 +1,10 @@
 .game{
-  @apply p-4 bg-transparent rounded-lg;
+  @apply p-4 bg-transparent rounded-xl;
   &__mediaWrapper{
-    @apply rounded-xl;
+    border-radius: 12px;
     overflow: hidden;
-    font-size: 0px;
+    max-width: 100%;
+    font-size: 0;
   }
   &__title{
     @apply font-bold text-2xl;

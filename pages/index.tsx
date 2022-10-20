@@ -1,12 +1,8 @@
-import { Layout } from "Components/Layout/BGLayer/Index"
+import { Layout } from "@Layout/index"
 import { Main } from "Components/screens/main"
 
 const Home = () => {
-  return (
-    <Layout>
-      <Main></Main>
-    </Layout>
-  )
+  return <Layout><Main/></Layout>
 }
 
 export default Home

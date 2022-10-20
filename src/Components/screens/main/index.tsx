@@ -1,6 +1,3 @@
-import {Header} from "@Layout/Header/Index"
-import {Sidebar} from "@Layout/Sidebar/Sidebar"
-
 import style from "./main.module.scss"
 
 import {Slider} from "@ui/Slider/Index"
@@ -12,9 +9,7 @@ import {games} from "@screens/main/games";
 export const Main = () => {
     return (
         <div className={style.wrapper}>
-            <Header></Header>
             <div className={style.content}>
-                <Sidebar/>
                 <div>
                     <Slider/>
                     <div className={style.games}>
