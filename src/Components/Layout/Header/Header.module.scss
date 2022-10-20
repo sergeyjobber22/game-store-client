@@ -3,11 +3,17 @@
 }
 
 .links {
-  @apply gap-12 flex items-center
+  @apply flex items-center gap-5;
+  @media (min-width: 700px) {
+    @apply gap-12;
+  }
 }
 
 .icons {
-  @apply flex flex-1 w-full h-full justify-end items-center gap-12
+  @apply flex flex-1 w-full h-full justify-end items-center gap-5;
+  @media (min-width: 700px) {
+    @apply gap-12;
+  }
 }
 
 .link {
@@ -15,12 +21,16 @@
     transition: 1s;
     color: #e58d27
   }
+  white-space: nowrap;
 }
 
 .icon {
   @apply w-9;
   stroke: #909090;
   fill: #909090;
+  @media (max-width: 840px) {
+    @apply w-6;
+  }
 
   &:hover {
     transition: 1s;
