@@ -1,55 +1,65 @@
-.wrapper{
-    @apply flex gap-5 pt-5 text-gray lg:pb-7 pb-3 ;
+.wrapper {
+  @apply flex gap-5 pt-5 text-gray lg:pb-7 pb-3 ;
 }
 
-.links{
-    @apply gap-12 flex items-center
+.links {
+  @apply gap-12 flex items-center
 }
 
-.icons{
-    @apply flex flex-1 w-full h-full justify-end items-center gap-12
+.icons {
+  @apply flex flex-1 w-full h-full justify-end items-center gap-12
 }
 
-.link{
-    &:hover{
-        transition: 1s;
-        color: #e58d27
-    }
+.link {
+  &:hover {
+    transition: 1s;
+    color: #e58d27
+  }
 }
 
-.icon{
-    @apply w-9;
-    stroke: #909090;
-    fill:  #909090;
-    &:hover{
-        transition: 1s;
-        cursor: pointer;
-        stroke: #e58d27;
-        fill:  #e58d27;
-    }
+.icon {
+  @apply w-9;
+  stroke: #909090;
+  fill: #909090;
+
+  &:hover {
+    transition: 1s;
+    cursor: pointer;
+    stroke: #e58d27;
+    fill: #e58d27;
+  }
 }
 
-.avatar{
-    @apply w-16 h-16 lg:w-24 lg:h-24 ;
+.avatar {
+  @apply w-16 h-16 lg:w-24 lg:h-24 ;
 }
 
-.burger{
-    width: 30px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    span{
-        &::before,&::after{
-            content: "";
-            width: 30px;
-            background-color: #909090;
-            height: 2px;
-            border-radius: 10px;    
-        }
-        width: 30px;
-        background-color: #909090;
-        height: 2px;
-        border-radius: 10px;
-    }
+.burger {
+  @media (min-width: 840px) {
+    display: none;
+  }
+  &:hover{
+    cursor:pointer;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 16px;
+
+  &:after,&:before {
+    content: "";
+    height: 2px;
+    border-radius: 10px;
+    display: block;
+    background: #909090;
+  }
+
+  >span {
+    height: 2px;
+    border-radius: 10px;
+    display: block;
+    background: #909090;
+    gap: 10px;
+  }
 }
