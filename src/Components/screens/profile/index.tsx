@@ -1,3 +1,8 @@
+import { UploadMedia } from '@ui/UploadMedia'
+import style from './profile.module.scss'
+
 export const Profile = () => {
-    return (<div>Profile</div>)
+    return (<div className={style.profile}>
+        <UploadMedia/>
+    </div>)
 }
