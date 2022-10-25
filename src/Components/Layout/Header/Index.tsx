@@ -31,9 +31,11 @@ export const Header = ({setSidebarOpen}:IHeader) => {
         <Cart className={style.icon} />
         <Bookmark className={style.icon} />
         <div>
+          <Link href={'/admin'}>
           <div className={style.avatar}>
             <Image src={avatar} />
           </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,0 +1,54 @@
+.link{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @apply px-4;
+    svg{
+        fill: gray;
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    @media (min-width:840px){
+        width: 300px;
+    }
+    width: 200px;
+    &__current{
+        @apply flex gap-2;
+        display: flex;
+        align-items: center;
+    }
+    &__burger{
+        width: 30px;
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &::after,&::before{
+            display: block;
+            content: "";
+            background: #909090;
+            width: 30px;
+            height: 1px;
+        }
+        div{
+            background: #909090;
+            width: 30px;
+            height: 1px;;
+        }
+    }
+    &__active{
+        cursor: pointer;
+        transition: 1s;
+        @apply bg-transparent;
+        border-right: solid#909090 1px;
+    }
+    &:hover{
+        cursor: pointer;
+        transition: 1s;
+        @apply bg-transparent;
+        border-right: solid#909090 1px;
+    }
+}

@@ -2,7 +2,7 @@ import {memo, PropsWithChildren, useState} from "react"
 
 import { Header } from "./Header/Index"
 import style from "./Layout.module.scss"
-import { Sidebar } from "./Sidebar/Sidebar"
+import { Sidebar } from "./Sidebar"
 
 export const Layout = memo(({ children }: PropsWithChildren) => {
     const [sidebarOpen,setSidebarOpen] = useState(true)
