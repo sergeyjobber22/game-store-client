@@ -1,7 +1,7 @@
 .layout{
     @apply bg-brown min-h-screen w-screen box-border;
     >div{
-        @apply bg-transparent-dark lg:px-10 px-4;
+        @apply bg-transparent-dark lg:px-10 px-4 pb-5 box-border;
     }
 }
 

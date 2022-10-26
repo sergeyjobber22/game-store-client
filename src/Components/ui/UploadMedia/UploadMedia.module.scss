@@ -1,7 +1,12 @@
 .uploadMedia{
-    width: 100px;
-    height: 100px;
-    background-color: aliceblue;
-    overflow: hidden;
-    border-radius: 100px;
+    input{
+        display: none;
+    }
+    label{
+        background-color: aliceblue;
+        display: block;
+        width: 300px;
+        height: 300px;
+        border-radius: 1000px;
+    }
 }

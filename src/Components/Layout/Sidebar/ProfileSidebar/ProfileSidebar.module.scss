@@ -1,3 +1,7 @@
 .ProfileSidebar{
     @apply py-4;
+    width: 350px;
+    @media (max-width:840px) {
+        width: 100%;
+    }
 }

@@ -11,10 +11,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 15px 0;
-    @media (min-width:840px){
-        width: 300px;
-    }
-    width: 200px;
     &__current{
         @apply flex gap-2;
         display: flex;

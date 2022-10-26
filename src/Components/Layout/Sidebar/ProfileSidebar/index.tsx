@@ -13,6 +13,18 @@ export const ProfileSidebar = () => {
       <Link title="history">
         <HistoryIcon />
       </Link>
+      <Link title="settings">
+        <SettingsIcon />
+      </Link>
+      <Link title="history">
+        <HistoryIcon />
+      </Link>
+      <Link title="settings">
+        <SettingsIcon />
+      </Link>
+      <Link title="history">
+        <HistoryIcon />
+      </Link>
     </div>
   )
 }
